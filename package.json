@@ -1,0 +1,30 @@
+{
+  "name": "create-node-app",
+  "version": "1.0.0",
+  "description": "Create a simple node app using Node.js and Babel",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "babel lib --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "main": "index.js",
+  "repository": "git+https://github.com/peterpme/create-node-app.git",
+  "keywords": [
+    "Node.js",
+    "Babel"
+  ],
+  "author": "Peter Piekarczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterpme/create-node-app/issues"
+  },
+  "homepage": "https://github.com/peterpme/create-node-app#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
+  }
+}
